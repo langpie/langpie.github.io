@@ -1,0 +1,8 @@
+site_name:  树莓派分布式自主驾驶小车-LangPie(浪派)
+nav:
+    - 首页: index.md
+    - 关于我们: about.md
+    - 入门指南: gettingstart.md
+    - 硬件构建: drawpcb.md
+    - 软件构建: software.md
+theme: readthedocs

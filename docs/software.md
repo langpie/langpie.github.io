@@ -2,7 +2,7 @@
 ## 树莓派系统
 * 下载:  https://www.raspberrypi.org/downloads/
 ## 系统烧录
-* 烧录软件下载配置(Etcher)
+* 烧录软件下载配置(Etcher): https://www.balena.io/etcher/
 ## 基础配置
 * 网络配置
 * 软件源配置

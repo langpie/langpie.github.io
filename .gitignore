@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules
+
+# Production
+dist
+
+# Misc
+.DS_Store
+
+# Lock file
+*-lock*
+*.lock*
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode*

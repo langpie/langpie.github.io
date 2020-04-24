@@ -2,12 +2,8 @@
 title: 关于
 sidebar: false
 ---
-:::warning
-TRANSLATED BY GOOGLE AUTOMATICALLY
-:::
 
-## Teammates
-
+## 小组成员
 * 圈圈
 * 漂移菌
 * DoubleDog 

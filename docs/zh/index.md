@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /icon.png
-title: 树莓派分布式自主驾驶小车
+title: 浪派
 description: 树莓派分布式自动驾驶小车项目
 
 comment: true

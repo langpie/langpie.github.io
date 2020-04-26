@@ -3,7 +3,7 @@ name: LangPie Action
 on:
   push:
     branches: 
-      - master
+      - sources
     paths-ignore:
       - 'README.md'
       - 'LICENSE'
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: 'master'
+          ref: 'sources'
 
       - name: Install dependencies
         run: |
@@ -31,7 +31,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           cname: ${{ secrets.CNAME }}
           commit_message: ${{ github.event.head_commit.message }}
-          publish_branch: 'gh-pages'
+          publish_branch: 'master'
           publish_dir: 'docs/.vuepress/dist'
           force_orphan: true
           enable_jekyll: true

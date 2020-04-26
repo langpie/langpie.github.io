@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "langpie-site",
+  "version": "1.0.0",
+  "description": "Project LangPie's official site",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "help": "echo 'Usage: npm run <docs:dev/docs:build/help>'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/langpie/langpie-site.git"
+  },
+  "author": "langpie",
+  "license": "GPLv3",
+  "homepage": "https://github.com/langpie/langpie-site/",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "latest",
+    "@vuepress/plugin-google-analytics": "latest",
+    "@vuepress/plugin-pwa": "latest",
+    "@vuepress/plugin-search": "latest",
+    "markdown-it-html5-embed": "latest",
+    "vuepress": "latest",
+    "vuepress-plugin-clean-urls": "latest",
+    "vuepress-plugin-copyright": "latest",
+    "vuepress-plugin-mathjax": "latest",
+    "vuepress-plugin-nprogress": "latest",
+    "vuepress-plugin-smooth-scroll": "latest",
+    "vuepress-theme-default-prefers-color-scheme": "latest"
+  }
+}

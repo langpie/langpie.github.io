@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/langpie/langpie-site.git"
+    "url": "https://github.com/langpie/langpie.github.io.git"
   },
   "author": "langpie",
   "license": "GPLv3",
-  "homepage": "https://github.com/langpie/langpie-site/",
+  "homepage": "https://github.com/langpie/langpie.github.io/",
   "devDependencies": {
     "@vuepress/plugin-active-header-links": "latest",
     "@vuepress/plugin-google-analytics": "latest",

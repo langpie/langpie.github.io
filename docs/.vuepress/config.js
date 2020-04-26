@@ -133,7 +133,7 @@ module.exports = {
     nextLinks: true,
     prevLinks: true,
     activeHeaderLinks: true,
-    repo: "langpie/langpie-site",
+    repo: "langpie/langpie.github.io",
     editLinks: true,
   },
 

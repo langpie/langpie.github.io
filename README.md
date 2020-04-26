@@ -1,12 +1,10 @@
 ## LangPie Project Site
 
-Powered by `vuepress`, developed with `nodejs` using `npm` and `yarn`, usage:
+浪派官方网站
 
-```bash
-npm run help
-```
+该网站由github Acitons 自动化生成。
+源码branch:sources
+页面branch:master
+已归档branch:archive
 
-## Note
-
-This site designed by @Unbinilium(@iChizer0), maintained by contributors inside langpie team.
 

@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /icon.png
-title: Project LangPie
+title: LangPie
 description: A Raspberry Pi Distributed Self-driving Car Project
 
 comment: true
@@ -10,7 +10,7 @@ actionText: Getting Started →
 actionLink: /docs/goals/overview/
 editLink: true
 lastUpdated: true
-footer: GPLv3 Licensed | Copyright © 2020 LangPie Team
+footer: GPLv3 Licensed | Copyright © 2020 LangPie
 ---
 
 <div style="text-align: center">

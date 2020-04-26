@@ -81,10 +81,10 @@ module.exports = {
         minLength: 1000,
         locales: {
           '/': {
-            authorName: 'LangPie Team'
+            authorName: 'LangPie'
           },
           '/zh/': {
-            authorName: 'LangPie 小组'
+            authorName: 'LangPie'
           }
         }
       }

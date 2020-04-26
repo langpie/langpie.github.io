@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /icon.png
-title: Project LangPie
+title: 树莓派分布式自主驾驶小车
 description: 树莓派分布式自动驾驶小车项目
 
 comment: true
@@ -10,7 +10,7 @@ actionText: 快速开始 →
 actionLink: /zh/docs/goals/overview/
 editLink: true
 lastUpdated: true
-footer: 使用 GPLv3 许可协议 | 版权所有 © 2020 LangPie 小组
+footer: 使用 GPLv3 许可协议 | 版权所有 © 2020 LangPie
 ---
 
 <div style="text-align: center">

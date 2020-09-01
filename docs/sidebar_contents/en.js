@@ -29,9 +29,7 @@ module.exports = [
       "docs/software/installation",
       "docs/software/preConfig",
       "docs/software/virtualenv",
-      "docs/software/installOpenCV",
       "docs/software/TestCamera",
-      "docs/software/DRV8833DemoCode",
     ]
   },
 ];

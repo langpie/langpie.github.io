@@ -37,7 +37,7 @@ and you can install library by using "pip install packageName".
 and if you want to jump out of the virtual environment,you can just typing
 "deactivate". 
 - Picuture as following:
-![Create new virtualenv environment]()
+![Create new virtualenv environment](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/docs/software/imgs/virtualenv.jpg)
 ## Install OpenCV
 - OpenCV is a free and opensource Computer vision library. We are going to use
 it as a CV frame, so that we can let the langpie move around via camera vision.
@@ -48,4 +48,5 @@ pip install numpy
 pip install opencv-python 
 ```
 - Snapshot:
-here is the link.
+![OpenCV installation](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/docs/software/imgs/opencv.jpg)
+

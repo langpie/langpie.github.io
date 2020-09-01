@@ -4,21 +4,21 @@ title: preConfig
 
 ## Know about the Pi hardware
 - Following Picture shows the label of the conponent.
-![Pi-label](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/software/imgs/pi-labelled.png)
+![Pi-label](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/docs/software/imgs/pi-labelled.png)
 
-## Assemble Pi 
+## Assemble Pi /
 - Connect the HDMI cable, ethernet cable[optional], USB keyboard, USB mouse, CSI
 camera and power supply.
-![Assemble pi](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/software/imgs/pi-plug-in.gif)
+![Assemble pi](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/docs/software/imgs/pi-plug-in.gif)
 
 ## Pi desktop
 - This is the desktop of the pi if booting normal.
-![desktop](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/software/imgs/pi-desktop.png)
+![desktop](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/docs/software/imgs/pi-desktop.png)
 
 ## Initialized System
 - At first booting up, the system will ask you to setting up the region, keymap,
 	and wifi-country and so on.
-![Piwizard](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/software/imgs/piwiz.gif)
+![Piwizard](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/docs/software/imgs/piwiz.gif)
 
 ## Pre-Config
 - In this section, you are going to pre-set your Raspberry Pi so that it can
@@ -32,7 +32,7 @@ sudo raspi-config
 ```
 and then navigate the selection to "Interfacing Options" to enable Camera and
 other functions such as "I2C","SPI", "Serial" and so on.
-![raspi-config](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/software/imgs/raspiconfig.jpg)
+![raspi-config](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/docs/software/imgs/raspiconfig.jpg)
 
 ## Install New wiringPi library
 * The old wiringPi library may not work properly.
@@ -52,4 +52,4 @@ gpio readall
 ```
 If you see this picture means that you have already finished the wiringPi
 library's installation.
-![raspi-config](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/software/imgs/gpio.jpg)
+![raspi-config](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/docs/software/imgs/gpio.jpg)

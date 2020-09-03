@@ -26,6 +26,11 @@ module.exports = [
     collapsable: true,
     children: [
       "zh/docs/software/basic"
+      "zh/docs/software/installation",
+      "zh/docs/software/preConfig",
+      "zh/docs/software/virtualenv",
+      "zh/docs/software/TestCamera",
+      "zh/docs/software/getTemperature",
     ]
   },
 ];

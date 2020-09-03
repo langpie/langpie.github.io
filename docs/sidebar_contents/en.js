@@ -30,6 +30,7 @@ module.exports = [
       "docs/software/preConfig",
       "docs/software/virtualenv",
       "docs/software/TestCamera",
+      "docs/software/getTemperature",
     ]
   },
 ];

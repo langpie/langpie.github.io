@@ -1,3 +1,9 @@
+---
+title: Object Detection
+---
+## Following demo code is an example for CV2 user to try some object-detection experiment on Raspberry Pi.
+### Create a new file and copy & paste it.
+```python
 import cv2
 import numpy as np
 
@@ -42,4 +48,9 @@ except KeyboardInterrupt:
 finally:
     cap.release()
     cv2.destroyAllWindows()
-
+```
+## Run and test.
+```bash
+python object_detection.py
+```
+## Done

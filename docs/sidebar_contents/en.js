@@ -31,6 +31,7 @@ module.exports = [
       "docs/software/virtualenv",
       "docs/software/TestCamera",
       "docs/software/getTemperature",
+      "docs/software/object_detection",
     ]
   },
 ];

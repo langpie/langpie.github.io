@@ -61,4 +61,4 @@ except KeyboardInterrupt:
 python auto_aim_head.py
 ```
 ## Demo Result
-![auto_aim_head]()
+![autoaimhead](https://raw.githubusercontent.com/langpie/langpie.github.io/sources/docs/docs/software/imgs/auto-aim-head.jpg)

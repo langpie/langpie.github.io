@@ -1,7 +1,8 @@
 ---
 title: MPU6050 
 ---
-## This is the demo code for using MPU6050 on Raspberry Pi. The specific wiring steps and the part of enabling I2C will be organized into the chapter of primary use.
+## Concept 
+This is the demo code for using MPU6050 on Raspberry Pi. The specific wiring steps and the part of enabling I2C will be organized into the chapter of primary use.
 The gyroscope has many functions. We can use the gyroscope to obtain the running posture of the car, the forward direction and acceleration, including the moving speed.
 ## Demo Code
 ```python

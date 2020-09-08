@@ -32,7 +32,7 @@ module.exports = [
       "docs/software/TestCamera",
       "docs/software/getTemperature",
       "docs/software/object_detection",
-      "docs/software/mpu6050",
+      "docs/software/howToUseMPU6050",
     ]
   },
 ];

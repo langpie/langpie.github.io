@@ -33,6 +33,7 @@ module.exports = [
       "docs/software/getTemperature",
       "docs/software/object_detection",
       "docs/software/howToUseMPU6050",
+      "docs/software/auto_aimhead",
     ]
   },
 ];

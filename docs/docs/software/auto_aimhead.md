@@ -61,4 +61,4 @@ except KeyboardInterrupt:
 python auto_aim_head.py
 ```
 ## Demo Result
-
+![auto_aim_head]()

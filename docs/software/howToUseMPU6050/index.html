@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MPU6050 | Project LangPie</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+    <meta name="description" content="A Raspberry Pi Distributed Self-driving Car Project">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#5d85c8">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon.png">
+    <meta property="twitter:card" content="summary">
+    <meta property="og:title" content="Project LangPie">
+    <meta property="og:description" content="A Raspberry Pi Distributed Self-driving Car Project">
+    <meta property="og:url" content="https://langpie.ga/">
+    <meta property="og:image" content="https://langpie.ga/open_graph_logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Project LangPie">
+    <link rel="preload" href="/assets/css/0.styles.c0967cea.css" as="style"><link rel="preload" href="/assets/js/app.bda2eb1e.js" as="script"><link rel="preload" href="/assets/js/2.dedfbb1b.js" as="script"><link rel="preload" href="/assets/js/16.7ee29a4e.js" as="script"><link rel="prefetch" href="/assets/js/10.db65c536.js"><link rel="prefetch" href="/assets/js/11.a0d6ec95.js"><link rel="prefetch" href="/assets/js/12.edd42a0b.js"><link rel="prefetch" href="/assets/js/13.fc2c6088.js"><link rel="prefetch" href="/assets/js/14.9a6b3b1a.js"><link rel="prefetch" href="/assets/js/15.c52357a2.js"><link rel="prefetch" href="/assets/js/17.1cd83f36.js"><link rel="prefetch" href="/assets/js/18.8c02a2d2.js"><link rel="prefetch" href="/assets/js/19.5a46f985.js"><link rel="prefetch" href="/assets/js/20.0ba8596a.js"><link rel="prefetch" href="/assets/js/21.6b37b962.js"><link rel="prefetch" href="/assets/js/22.d2777d47.js"><link rel="prefetch" href="/assets/js/23.912e6a7d.js"><link rel="prefetch" href="/assets/js/24.2ad61612.js"><link rel="prefetch" href="/assets/js/25.11ab7c4f.js"><link rel="prefetch" href="/assets/js/26.b6a781a9.js"><link rel="prefetch" href="/assets/js/27.6696496a.js"><link rel="prefetch" href="/assets/js/28.dcc590a8.js"><link rel="prefetch" href="/assets/js/29.96844031.js"><link rel="prefetch" href="/assets/js/3.55fd8fcd.js"><link rel="prefetch" href="/assets/js/4.45463023.js"><link rel="prefetch" href="/assets/js/5.4c1c4963.js"><link rel="prefetch" href="/assets/js/6.e3876a03.js"><link rel="prefetch" href="/assets/js/7.a3d7b10c.js"><link rel="prefetch" href="/assets/js/8.696f72e2.js"><link rel="prefetch" href="/assets/js/9.f898e618.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c0967cea.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Project LangPie</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/goals/overview.html" class="nav-link">
+  Docs
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  About
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/software/howToUseMPU6050/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/langpie/langpie" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docs/goals/overview.html" class="nav-link">
+  Docs
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  About
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/software/howToUseMPU6050/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/langpie/langpie" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Goals</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Guides</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Hardware Instruction</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Software Instruction</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/software/basic/" class="sidebar-link">Basic Configuration</a></li><li><a href="/docs/software/installation/" class="sidebar-link">Installation</a></li><li><a href="/docs/software/preConfig/" class="sidebar-link">preConfig</a></li><li><a href="/docs/software/virtualenv/" class="sidebar-link">virtualenv</a></li><li><a href="/docs/software/TestCamera/" class="sidebar-link">Test Camera</a></li><li><a href="/docs/software/getTemperature/" class="sidebar-link">Get CPU Temperature</a></li><li><a href="/docs/software/object_detection/" class="sidebar-link">Object Detection</a></li><li><a href="/docs/software/howToUseMPU6050/" aria-current="page" class="active sidebar-link">MPU6050</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/software/howToUseMPU6050/#concept" class="sidebar-link">Concept</a></li><li class="sidebar-sub-header"><a href="/docs/software/howToUseMPU6050/#demo-code" class="sidebar-link">Demo Code</a></li><li class="sidebar-sub-header"><a href="/docs/software/howToUseMPU6050/#run-test-it" class="sidebar-link">Run &amp; test it.</a></li><li class="sidebar-sub-header"><a href="/docs/software/howToUseMPU6050/#done" class="sidebar-link">Done.</a></li></ul></li><li><a href="/docs/software/auto_aimhead/" class="sidebar-link">Auto aim head</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="concept"><a href="#concept" class="header-anchor">#</a> Concept</h2> <p>This is the demo code for using MPU6050 on Raspberry Pi. The specific wiring steps and the part of enabling I2C will be organized into the chapter of primary use.
+The gyroscope has many functions. We can use the gyroscope to obtain the running posture of the car, the forward direction and acceleration, including the moving speed.</p> <h2 id="demo-code"><a href="#demo-code" class="header-anchor">#</a> Demo Code</h2> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#!/usr/bin/env python</span>
+<span class="token keyword">import</span> smbus
+<span class="token keyword">import</span> math
+
+<span class="token comment"># Register</span>
+power_mgmt_1 <span class="token operator">=</span> <span class="token number">0x6b</span>
+power_mgmt_2 <span class="token operator">=</span> <span class="token number">0x6c</span>
+
+<span class="token keyword">def</span> <span class="token function">read_byte</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> bus<span class="token punctuation">.</span>read_byte_data<span class="token punctuation">(</span>address<span class="token punctuation">,</span> reg<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">read_word</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    h <span class="token operator">=</span> bus<span class="token punctuation">.</span>read_byte_data<span class="token punctuation">(</span>address<span class="token punctuation">,</span> reg<span class="token punctuation">)</span>
+    l <span class="token operator">=</span> bus<span class="token punctuation">.</span>read_byte_data<span class="token punctuation">(</span>address<span class="token punctuation">,</span> reg<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+    value <span class="token operator">=</span> <span class="token punctuation">(</span>h <span class="token operator">&lt;&lt;</span> <span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">+</span> l
+    <span class="token keyword">return</span> value
+
+<span class="token keyword">def</span> <span class="token function">read_word_2c</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    val <span class="token operator">=</span> read_word<span class="token punctuation">(</span>reg<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>val <span class="token operator">&gt;=</span> <span class="token number">0x8000</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">65535</span> <span class="token operator">-</span> val<span class="token punctuation">)</span> <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> val
+
+<span class="token keyword">def</span> <span class="token function">dist</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token operator">*</span>a<span class="token punctuation">)</span><span class="token operator">+</span><span class="token punctuation">(</span>b<span class="token operator">*</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">get_y_rotation</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>z<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    radians <span class="token operator">=</span> math<span class="token punctuation">.</span>atan2<span class="token punctuation">(</span>x<span class="token punctuation">,</span> dist<span class="token punctuation">(</span>y<span class="token punctuation">,</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token operator">-</span>math<span class="token punctuation">.</span>degrees<span class="token punctuation">(</span>radians<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">get_x_rotation</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>z<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    radians <span class="token operator">=</span> math<span class="token punctuation">.</span>atan2<span class="token punctuation">(</span>y<span class="token punctuation">,</span> dist<span class="token punctuation">(</span>x<span class="token punctuation">,</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> math<span class="token punctuation">.</span>degrees<span class="token punctuation">(</span>radians<span class="token punctuation">)</span>
+
+bus <span class="token operator">=</span> smbus<span class="token punctuation">.</span>SMBus<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+address <span class="token operator">=</span> <span class="token number">0x68</span>
+
+bus<span class="token punctuation">.</span>write_byte_data<span class="token punctuation">(</span>address<span class="token punctuation">,</span> power_mgmt_1<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;GYROSKOP&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;-&quot;</span><span class="token operator">*</span><span class="token number">30</span><span class="token punctuation">)</span>
+
+gyroskop_xout <span class="token operator">=</span> read_word_2c<span class="token punctuation">(</span><span class="token number">0x43</span><span class="token punctuation">)</span>
+gyroskop_yout <span class="token operator">=</span> read_word_2c<span class="token punctuation">(</span><span class="token number">0x45</span><span class="token punctuation">)</span>
+gyroskop_zout <span class="token operator">=</span> read_word_2c<span class="token punctuation">(</span><span class="token number">0x47</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span> <span class="token string">&quot;gyroskop_xout: &quot;</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token string">&quot;%5d&quot;</span> <span class="token operator">%</span> gyroskop_xout<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot; skaliert: &quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>gyroskop_xout <span class="token operator">/</span><span class="token number">131</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token string">&quot;gyroskop_yout: &quot;</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token string">&quot;%5d&quot;</span> <span class="token operator">%</span> gyroskop_yout<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot; skaliert: &quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>gyroskop_yout <span class="token operator">/</span><span class="token number">131</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token string">&quot;gyroskop_zout: &quot;</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token string">&quot;%5d&quot;</span> <span class="token operator">%</span> gyroskop_zout<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot; skaliert: &quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>gyroskop_zout <span class="token operator">/</span><span class="token number">131</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;#&quot;</span><span class="token operator">*</span><span class="token number">30</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;Baschleunigungssensor&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;-&quot;</span><span class="token operator">*</span><span class="token number">30</span><span class="token punctuation">)</span>
+
+bes_xout <span class="token operator">=</span> read_word_2c<span class="token punctuation">(</span><span class="token number">0x3b</span><span class="token punctuation">)</span>
+bes_yout <span class="token operator">=</span> read_word_2c<span class="token punctuation">(</span><span class="token number">0x3d</span><span class="token punctuation">)</span>
+bes_zout <span class="token operator">=</span> read_word_2c<span class="token punctuation">(</span><span class="token number">0x3f</span><span class="token punctuation">)</span>
+
+bes_xout_ska <span class="token operator">=</span> bes_xout <span class="token operator">/</span> <span class="token number">16384.0</span>
+bes_yout_ska <span class="token operator">=</span> bes_yout <span class="token operator">/</span> <span class="token number">16384.0</span>
+bes_zout_ska <span class="token operator">=</span> bes_zout <span class="token operator">/</span> <span class="token number">16384.0</span>
+
+<span class="token keyword">print</span> <span class="token string">&quot;beschleunigung_xout: &quot;</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token string">&quot;%6d&quot;</span> <span class="token operator">%</span> bes_xout<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">&quot; skaliert: &quot;</span><span class="token punctuation">,</span> bes_xout_ska
+<span class="token keyword">print</span> <span class="token string">&quot;beschleunigung_yout: &quot;</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token string">&quot;%6d&quot;</span> <span class="token operator">%</span> bes_yout<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">&quot; skaliert: &quot;</span><span class="token punctuation">,</span> bes_yout_ska
+<span class="token keyword">print</span> <span class="token string">&quot;beschleunigung_zout: &quot;</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token string">&quot;%6d&quot;</span> <span class="token operator">%</span> bes_zout<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">&quot; skaliert: &quot;</span><span class="token punctuation">,</span> bes_zout_ska
+
+<span class="token keyword">print</span> <span class="token string">&quot;X Rotation: &quot;</span><span class="token punctuation">,</span> get_x_rotation<span class="token punctuation">(</span>bes_xout_ska<span class="token punctuation">,</span> bes_yout_ska<span class="token punctuation">,</span> bes_zout_ska<span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token string">&quot;Y Rotation: &quot;</span><span class="token punctuation">,</span> get_y_rotation<span class="token punctuation">(</span>bes_xout_ska<span class="token punctuation">,</span> bes_yout_ska<span class="token punctuation">,</span> bes_zout_ska<span class="token punctuation">)</span>
+</code></pre></div><h2 id="run-test-it"><a href="#run-test-it" class="header-anchor">#</a> Run &amp; test it.</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>python mpu6050_test.py 
+</code></pre></div><h2 id="done"><a href="#done" class="header-anchor">#</a> Done.</h2></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">GPLv3 / Last Updated:</span> <span class="time">9/8/2020, 1:16:34 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/software/object_detection/" class="prev">
+        Object Detection
+      </a></span> <span class="next"><a href="/docs/software/auto_aimhead/">
+        Auto aim head
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.bda2eb1e.js" defer></script><script src="/assets/js/2.dedfbb1b.js" defer></script><script src="/assets/js/16.7ee29a4e.js" defer></script>
+  </body>
+</html>
